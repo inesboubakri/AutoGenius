@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../110-removebg-preview.png</file>
+        <file>110-removebg-preview.png</file>
+        <file>105-removebg-preview.png</file>
+    </qresource>
+</RCC>
