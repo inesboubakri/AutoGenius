@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1309</width>
+    <height>703</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(0, 0, 130, 255), stop:1 rgba(255, 255, 255, 255));</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item alignment="Qt::Qt::AlignTop">
+     <widget class="QFrame" name="frame">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 15px;  </string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QFrame" name="frame_7">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="img.qrc">:/qt/Car.png</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>AUTO_GENIUS</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_6">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QPushButton" name="pushButton_20">
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+            </property>
+            <property name="text">
+             <string>welcome user</string>
+            </property>
+            <property name="icon">
+             <iconset resource="img.qrc">
+              <normaloff>:/qt/hello.png</normaloff>:/qt/hello.png</iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_5">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QComboBox" name="comboBox">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);
+border: 2px solid #000000;
+border-radius: 15px;  </string>
+            </property>
+            <item>
+             <property name="text">
+              <string>trier par: nom du locale</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>trier par: adresse</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_4">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_8">
+          <item>
+           <widget class="QFrame" name="frame_19">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_7">
+             <item>
+              <widget class="QLabel" name="label_3">
+               <property name="maximumSize">
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="pixmap">
+                <pixmap resource="img.qrc">:/qt/loupe.png</pixmap>
+               </property>
+               <property name="scaledContents">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_2">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);
+border: 2px solid #000000;
+border-radius: 15px;  </string>
+            </property>
+            <item>
+             <property name="text">
+              <string>chercher par: nom du locale</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>chercher par: numero du telephone</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_3">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="minimumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>30</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="img.qrc">:/qt/bell.png</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton">
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}</string>
+            </property>
+            <property name="text">
+             <string>user</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_2">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 15px;  </string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QFrame" name="frame_8">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <widget class="QPushButton" name="pushButton_2">
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}</string>
+            </property>
+            <property name="text">
+             <string>home</string>
+            </property>
+            <property name="icon">
+             <iconset resource="img.qrc">
+              <normaloff>:/qt/1.png</normaloff>:/qt/1.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_8">
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}</string>
+            </property>
+            <property name="text">
+             <string>clients</string>
+            </property>
+            <property name="icon">
+             <iconset resource="img.qrc">
+              <normaloff>:/qt/wired-outline-21-avatar-hover-jumping.png</normaloff>:/qt/wired-outline-21-avatar-hover-jumping.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_3">
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}</string>
+            </property>
+            <property name="text">
+             <string>partenaires</string>
+            </property>
+            <property name="icon">
+             <iconset resource="img.qrc">
+              <normaloff>:/qt/target.png</normaloff>:/qt/target.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_7">
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+            </property>
+            <property name="text">
+             <string>employé</string>
+            </property>
+            <property name="icon">
+             <iconset resource="img.qrc">
+              <normaloff>:/qt/hand-shake.png</normaloff>:/qt/hand-shake.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_4">
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}</string>
+            </property>
+            <property name="text">
+             <string>service</string>
+            </property>
+            <property name="icon">
+             <iconset resource="img.qrc">
+              <normaloff>:/qt/open-hand.png</normaloff>:/qt/open-hand.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_6">
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}</string>
+            </property>
+            <property name="text">
+             <string>véhicules</string>
+            </property>
+            <property name="icon">
+             <iconset resource="img.qrc">
+              <normaloff>:/qt/wired-outline-860-electric-car-hover-pinch.png</normaloff>:/qt/wired-outline-860-electric-car-hover-pinch.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_5">
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}</string>
+            </property>
+            <property name="text">
+             <string>locaux</string>
+            </property>
+            <property name="icon">
+             <iconset resource="img.qrc">
+              <normaloff>:/qt/wired-outline-2020-wroclaw-city-hover-pinch.png</normaloff>:/qt/wired-outline-2020-wroclaw-city-hover-pinch.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_9">
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}</string>
+            </property>
+            <property name="text">
+             <string>déconnecter</string>
+            </property>
+            <property name="icon">
+             <iconset resource="img.qrc">
+              <normaloff>:/qt/logout.png</normaloff>:/qt/logout.png</iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_9">
+         <property name="styleSheet">
+          <string notr="true">border-radius: 15px;  </string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <item>
+           <widget class="QStackedWidget" name="stackedWidget">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(0, 0, 127);
+border-radius: 15px;  </string>
+            </property>
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="page">
+             <layout class="QVBoxLayout" name="verticalLayout_7">
+              <item alignment="Qt::Qt::AlignTop">
+               <widget class="QFrame" name="frame_10">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_5">
+                 <item>
+                  <widget class="QPushButton" name="pushButton_10">
+                   <property name="enabled">
+                    <bool>true</bool>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+                   </property>
+                   <property name="text">
+                    <string>afficher</string>
+                   </property>
+                   <property name="iconSize">
+                    <size>
+                     <width>20</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="pushButton_11">
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}</string>
+                   </property>
+                   <property name="text">
+                    <string>ajouter</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="pushButton_18">
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}</string>
+                   </property>
+                   <property name="text">
+                    <string>modifier</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="pushButton_12">
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}</string>
+                   </property>
+                   <property name="text">
+                    <string>supprimer</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_11">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_8">
+                 <item alignment="Qt::Qt::AlignTop">
+                  <widget class="QFrame" name="frame_13">
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_6">
+                    <item>
+                     <widget class="QFrame" name="frame_16">
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_9">
+                       <item>
+                        <widget class="QPushButton" name="pushButton_13">
+                         <property name="styleSheet">
+                          <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}</string>
+                         </property>
+                         <property name="text">
+                          <string>trier: trier par adresse</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QFrame" name="frame_14">
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_10">
+                       <item>
+                        <widget class="QPushButton" name="pushButton_14">
+                         <property name="styleSheet">
+                          <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}</string>
+                         </property>
+                         <property name="text">
+                          <string>exporter PDF</string>
+                         </property>
+                         <property name="icon">
+                          <iconset resource="img.qrc">
+                           <normaloff>:/qt/pdf-file.png</normaloff>:/qt/pdf-file.png</iconset>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QFrame" name="frame_17">
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_11">
+                       <item>
+                        <widget class="QPushButton" name="pushButton_17">
+                         <property name="styleSheet">
+                          <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}</string>
+                         </property>
+                         <property name="text">
+                          <string>maps</string>
+                         </property>
+                         <property name="icon">
+                          <iconset resource="img.qrc">
+                           <normaloff>:/qt/wired-outline-18-location-pin-hover-jump.png</normaloff>:/qt/wired-outline-18-location-pin-hover-jump.png</iconset>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QFrame" name="frame_15">
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_12">
+                       <item>
+                        <widget class="QPushButton" name="pushButton_16">
+                         <property name="styleSheet">
+                          <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}</string>
+                         </property>
+                         <property name="text">
+                          <string>historique</string>
+                         </property>
+                         <property name="icon">
+                          <iconset resource="img.qrc">
+                           <normaloff>:/qt/history.png</normaloff>:/qt/history.png</iconset>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QFrame" name="frame_18">
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <layout class="QVBoxLayout" name="verticalLayout_13">
+                       <item>
+                        <widget class="QPushButton" name="pushButton_15">
+                         <property name="styleSheet">
+                          <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}</string>
+                         </property>
+                         <property name="text">
+                          <string>chercher: chercher par nom du locale</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QFrame" name="frame_12">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <layout class="QVBoxLayout" name="verticalLayout_14">
+                    <item>
+                     <widget class="QTableView" name="tableView">
+                      <property name="styleSheet">
+                       <string notr="true">background-color: rgb(255, 255, 255);</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="page_2"/>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="img.qrc"/>
+ </resources>
+ <connections/>
+</ui>
