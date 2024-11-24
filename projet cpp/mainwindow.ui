@@ -1,0 +1,1705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1299</width>
+    <height>804</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="viewbutton">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>50</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#d1d938;&quot;&gt;employees&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color:rgb(33, 33, 41);
+font-family: 'Sans-Serif';
+ font-size: 20px;    
+ background-color: rgb(209, 255, 117);;
+border-radius:20px;
+font-color:white;
+
+
+}</string>
+    </property>
+    <property name="text">
+     <string>View</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>560</y>
+      <width>171</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(214, 245, 124);
+background-color: rgb(216, 242, 117);
+border-radius:15px;
+font-family: 'Sans-Serif';
+ font-size: 20px;  </string>
+    </property>
+    <property name="text">
+     <string>   </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_23">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>170</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color:rgb(255, 255, 255);
+font-family: 'Sans-Serif';
+ font-size: 20px;    
+	background-color: transparent;
+border-radius:20px;
+font-color:white;
+}</string>
+    </property>
+    <property name="text">
+     <string>Employees</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_24">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>270</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color:rgb(255, 255, 255);
+font-family: 'Sans-Serif';
+ font-size: 20px;    
+	background-color: transparent;
+border-radius:20px;
+font-color:white;
+}</string>
+    </property>
+    <property name="text">
+     <string>Partners</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_22">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>420</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color:rgb(255, 255, 255);
+font-family: 'Sans-Serif';
+ font-size: 20px;    
+	background-color: transparent;
+border-radius:20px;
+font-color:white;
+}</string>
+    </property>
+    <property name="text">
+     <string>Partners</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_25">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>320</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color:rgb(33, 33, 41);
+font-family: 'Sans-Serif';
+ font-size: 20px;    
+ background-color: rgb(209, 255, 117);;
+border-radius:20px;
+font-color:white;
+
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Vehicles</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="modbutton">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>50</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#d1d938;&quot;&gt;employees&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color:rgb(33, 33, 41);
+font-family: 'Sans-Serif';
+ font-size: 20px;    
+ background-color: rgb(209, 255, 117);;
+border-radius:20px;
+font-color:white;
+
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Modify</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_20">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>120</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	color: rgb(255, 255, 255);
+font-family: 'Sans-Serif';
+ font-size: 18px;    
+	background-color: transparent;
+border-radius:20px;
+
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Dashboard</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_19">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>370</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#d1d938;&quot;&gt;employees&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color:rgb(255, 255, 255);
+font-family: 'Sans-Serif';
+ font-size: 20px;    
+	background-color: transparent;
+border-radius:20px;
+font-color:white;
+}</string>
+    </property>
+    <property name="text">
+     <string>Services</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>540</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: white;
+border-radius:24px;
+border-color:rgb(33,37,41);
+border:6px solid;
+width:30px;
+height:30px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_21">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>220</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color:rgb(255, 255, 255);
+font-family: 'Sans-Serif';
+ font-size: 20px;    
+	background-color: transparent;
+border-radius:20px;
+font-color:white;
+}</string>
+    </property>
+    <property name="text">
+     <string>Clients</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addbutton">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>50</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#d1d938;&quot;&gt;employees&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color:rgb(33, 33, 41);
+font-family: 'Sans-Serif';
+ font-size: 20px;    
+ background-color: rgb(209, 255, 117);;
+border-radius:20px;
+font-color:white;
+
+
+}</string>
+    </property>
+    <property name="text">
+     <string>ADD</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>211</width>
+      <height>691</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(33, 33, 41);
+border-radius:20px;
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>110</y>
+      <width>961</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>2</number>
+    </property>
+    <widget class="QWidget" name="addemp">
+     <widget class="QLineEdit" name="matricule_le">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>70</y>
+        <width>471</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    color: blue;  /* Change la couleur du texte en bleu */
+    font-family: 'Sans-Serif';
+    font-size: 20px;
+    background-color: white;  /* Couleur de fond blanche */
+    border-radius: 20px;
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ajouterButton">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>550</y>
+        <width>431</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#d1d938;&quot;&gt;employees&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+color:rgb(33, 33, 41);
+font-family: 'Sans-Serif';
+ font-size: 20px;    
+ background-color: rgb(209, 255, 117);;
+border-radius:20px;
+font-color:white;
+
+
+}</string>
+      </property>
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_32">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>70</y>
+        <width>281</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#d1d938;&quot;&gt;employees&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+color:rgb(33, 33, 41);
+font-family: 'Sans-Serif';
+ font-size: 24px;    
+ background-color: transparent;
+border-radius:20px;
+font-color:white;
+
+
+}</string>
+      </property>
+      <property name="text">
+       <string>MATRICULE</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_33">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>120</y>
+        <width>281</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#d1d938;&quot;&gt;employees&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+color:rgb(33, 33, 41);
+font-family: 'Sans-Serif';
+ font-size: 24px;    
+ background-color: transparent;
+border-radius:20px;
+font-color:white;
+
+
+}</string>
+      </property>
+      <property name="text">
+       <string>MARQUE</string>
+      </property>
+     </widget>
+     <widget class="QDateTimeEdit" name="date_le">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>290</y>
+        <width>471</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+border: 1px solid transparent;  /* Makes the border transparent */
+    background-color: white;  /* Optional: sets the background color */</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_51">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>10</y>
+        <width>301</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+color:rgb(33, 33, 41);
+font-family: 'Sans-Serif';
+ font-size: 30px;    
+	background-color: transparent;
+border-radius:20px;
+font-color:white;
+}</string>
+      </property>
+      <property name="text">
+       <string>ADD VEHICULE</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_34">
+      <property name="geometry">
+       <rect>
+        <x>-10</x>
+        <y>170</y>
+        <width>281</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#d1d938;&quot;&gt;employees&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+color:rgb(33, 33, 41);
+font-family: 'Sans-Serif';
+ font-size: 24px;    
+ background-color: transparent;
+border-radius:20px;
+font-color:white;
+
+
+}</string>
+      </property>
+      <property name="text">
+       <string>MODELE</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_35">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>220</y>
+        <width>281</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#d1d938;&quot;&gt;employees&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+color:rgb(33, 33, 41);
+font-family: 'Sans-Serif';
+ font-size: 24px;    
+ background-color: transparent;
+border-radius:20px;
+font-color:white;
+
+
+}</string>
+      </property>
+      <property name="text">
+       <string>TYPE</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_36">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>280</y>
+        <width>281</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#d1d938;&quot;&gt;employees&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+color:rgb(33, 33, 41);
+font-family: 'Sans-Serif';
+ font-size: 24px;    
+ background-color: transparent;
+border-radius:20px;
+font-color:white;
+
+
+}</string>
+      </property>
+      <property name="text">
+       <string>DATE  ENTRETIENT</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_52">
+      <property name="geometry">
+       <rect>
+        <x>-10</x>
+        <y>340</y>
+        <width>281</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#d1d938;&quot;&gt;employees&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+color:rgb(33, 33, 41);
+font-family: 'Sans-Serif';
+ font-size: 24px;    
+ background-color: transparent;
+border-radius:20px;
+font-color:white;
+
+
+}</string>
+      </property>
+      <property name="text">
+       <string>TYPE TRANSMISSION</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_54">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>400</y>
+        <width>281</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#d1d938;&quot;&gt;employees&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+color:rgb(33, 33, 41);
+font-family: 'Sans-Serif';
+ font-size: 24px;    
+ background-color: transparent;
+border-radius:20px;
+font-color:white;
+
+
+}</string>
+      </property>
+      <property name="text">
+       <string>STATUT</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="marque_le">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>120</y>
+        <width>471</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    color: blue;  /* Change la couleur du texte en bleu */
+    font-family: 'Sans-Serif';
+    font-size: 20px;
+    background-color: white;  /* Couleur de fond blanche */
+    border-radius: 20px;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="modele_le">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>180</y>
+        <width>471</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    color: blue;  /* Change la couleur du texte en bleu */
+    font-family: 'Sans-Serif';
+    font-size: 20px;
+    background-color: white;  /* Couleur de fond blanche */
+    border-radius: 20px;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="type_le">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>230</y>
+        <width>471</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    color: blue;  /* Change la couleur du texte en bleu */
+    font-family: 'Sans-Serif';
+    font-size: 20px;
+    background-color: white;  /* Couleur de fond blanche */
+    border-radius: 20px;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="typetranss_le">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>350</y>
+        <width>471</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    color: blue;  /* Change la couleur du texte en bleu */
+    font-family: 'Sans-Serif';
+    font-size: 20px;
+    background-color: white;  /* Couleur de fond blanche */
+    border-radius: 20px;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="statut_le">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>410</y>
+        <width>471</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    color: blue;  /* Change la couleur du texte en bleu */
+    font-family: 'Sans-Serif';
+    font-size: 20px;
+    background-color: white;  /* Couleur de fond blanche */
+    border-radius: 20px;
+}
+</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="modemp">
+     <widget class="QPushButton" name="modifier_btn">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>550</y>
+        <width>271</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#d1d938;&quot;&gt;employees&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+color:rgb(33, 33, 41);
+font-family: 'Sans-Serif';
+ font-size: 20px;    
+ background-color: rgb(209, 255, 117);;
+border-radius:20px;
+font-color:white;
+
+
+}</string>
+      </property>
+      <property name="text">
+       <string>Modify</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="type_trans_update">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>330</y>
+        <width>471</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    color: blue;  /* Change la couleur du texte en bleu */
+    font-family: 'Sans-Serif';
+    font-size: 20px;
+    background-color: white;  /* Couleur de fond blanche */
+    border-radius: 20px;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="statut_update">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>380</y>
+        <width>471</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    color: blue;  /* Change la couleur du texte en bleu */
+    font-family: 'Sans-Serif';
+    font-size: 20px;
+    background-color: white;  /* Couleur de fond blanche */
+    border-radius: 20px;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_41">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>120</y>
+        <width>281</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#d1d938;&quot;&gt;employees&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+color:rgb(33, 33, 41);
+font-family: 'Sans-Serif';
+ font-size: 24px;    
+ background-color: transparent;
+border-radius:20px;
+font-color:white;
+
+
+}</string>
+      </property>
+      <property name="text">
+       <string>MARQUE</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_45">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>170</y>
+        <width>281</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#d1d938;&quot;&gt;employees&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+color:rgb(33, 33, 41);
+font-family: 'Sans-Serif';
+ font-size: 24px;    
+ background-color: transparent;
+border-radius:20px;
+font-color:white;
+
+
+}</string>
+      </property>
+      <property name="text">
+       <string>MODELE</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_55">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>370</y>
+        <width>281</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#d1d938;&quot;&gt;employees&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+color:rgb(33, 33, 41);
+font-family: 'Sans-Serif';
+ font-size: 24px;    
+ background-color: transparent;
+border-radius:20px;
+font-color:white;
+
+
+}</string>
+      </property>
+      <property name="text">
+       <string>STATUT</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_39">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>70</y>
+        <width>281</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#d1d938;&quot;&gt;employees&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+color:rgb(33, 33, 41);
+font-family: 'Sans-Serif';
+ font-size: 24px;    
+ background-color: transparent;
+border-radius:20px;
+font-color:white;
+
+
+}</string>
+      </property>
+      <property name="text">
+       <string>MATRICULE</string>
+      </property>
+     </widget>
+     <widget class="QDateTimeEdit" name="dateentretient_update">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>280</y>
+        <width>471</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+border: 1px solid transparent;  /* Makes the border transparent */
+    background-color: white;  /* Optional: sets the background color */</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_57">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>320</y>
+        <width>281</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#d1d938;&quot;&gt;employees&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+color:rgb(33, 33, 41);
+font-family: 'Sans-Serif';
+ font-size: 24px;    
+ background-color: transparent;
+border-radius:20px;
+font-color:white;
+
+
+}</string>
+      </property>
+      <property name="text">
+       <string>TYPE TRANSMISSION</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_38">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>220</y>
+        <width>281</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#d1d938;&quot;&gt;employees&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+color:rgb(33, 33, 41);
+font-family: 'Sans-Serif';
+ font-size: 24px;    
+ background-color: transparent;
+border-radius:20px;
+font-color:white;
+
+
+}</string>
+      </property>
+      <property name="text">
+       <string>TYPE</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="matricule_update">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>70</y>
+        <width>471</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    color: blue;  /* Change la couleur du texte en bleu */
+    font-family: 'Sans-Serif';
+    font-size: 20px;
+    background-color: white;  /* Couleur de fond blanche */
+    border-radius: 20px;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="marque_update">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>120</y>
+        <width>471</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    color: blue;  /* Change la couleur du texte en bleu */
+    font-family: 'Sans-Serif';
+    font-size: 20px;
+    background-color: white;  /* Couleur de fond blanche */
+    border-radius: 20px;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="type_update">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>230</y>
+        <width>471</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    color: blue;  /* Change la couleur du texte en bleu */
+    font-family: 'Sans-Serif';
+    font-size: 20px;
+    background-color: white;  /* Couleur de fond blanche */
+    border-radius: 20px;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_44">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>270</y>
+        <width>281</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#d1d938;&quot;&gt;employees&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+color:rgb(33, 33, 41);
+font-family: 'Sans-Serif';
+ font-size: 24px;    
+ background-color: transparent;
+border-radius:20px;
+font-color:white;
+
+
+}</string>
+      </property>
+      <property name="text">
+       <string>DATE  ENTRETIENT</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="modele_update">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>180</y>
+        <width>471</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    color: blue;  /* Change la couleur du texte en bleu */
+    font-family: 'Sans-Serif';
+    font-size: 20px;
+    background-color: white;  /* Couleur de fond blanche */
+    border-radius: 20px;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_58">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>10</y>
+        <width>431</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+color:rgb(33, 33, 41);
+font-family: 'Sans-Serif';
+ font-size: 30px;    
+	background-color: transparent;
+border-radius:20px;
+font-color:white;
+}</string>
+      </property>
+      <property name="text">
+       <string>Modify VEHICULE</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="statisticsPage">
+     <widget class="QGraphicsView" name="graphicsView">
+      <property name="geometry">
+       <rect>
+        <x>105</x>
+        <y>20</y>
+        <width>781</width>
+        <height>361</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="viewemp">
+     <widget class="QTableView" name="tableView">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>120</y>
+        <width>701</width>
+        <height>451</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>720</x>
+        <y>160</y>
+        <width>221</width>
+        <height>411</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(33, 33, 41);
+border-radius:20px;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_46">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>140</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#d1d938;&quot;&gt;employees&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+color:rgb(33, 33, 41);
+font-family: 'Sans-Serif';
+ font-size: 20px;    
+ background-color: rgb(209, 255, 117);;
+border-radius:20px;
+font-color:white;
+
+
+}</string>
+      </property>
+      <property name="text">
+       <string>Tools</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_pdf">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>210</y>
+        <width>201</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#d1d938;&quot;&gt;employees&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+color:rgb(33, 33, 41);
+font-family: 'Sans-Serif';
+ font-size: 20px;    
+ background-color: rgb(209, 255, 117);;
+border-radius:20px;
+font-color:white;
+
+
+}</string>
+      </property>
+      <property name="text">
+       <string>PDF</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_48">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>270</y>
+        <width>201</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#d1d938;&quot;&gt;employees&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+color:rgb(33, 33, 41);
+font-family: 'Sans-Serif';
+ font-size: 20px;    
+ background-color: rgb(209, 255, 117);;
+border-radius:20px;
+font-color:white;
+
+
+}</string>
+      </property>
+      <property name="text">
+       <string>EXCEL</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_tri">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>330</y>
+        <width>201</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#d1d938;&quot;&gt;employees&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+color:rgb(33, 33, 41);
+font-family: 'Sans-Serif';
+ font-size: 20px;    
+ background-color: rgb(209, 255, 117);;
+border-radius:20px;
+font-color:white;
+
+
+}</string>
+      </property>
+      <property name="text">
+       <string>Tri </string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_Search">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    color: blue;  /* Change la couleur du texte en bleu */
+    font-family: 'Sans-Serif';
+    font-size: 20px;
+    background-color: white;  /* Couleur de fond blanche */
+    border-radius: 20px;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="matricul_a_supp">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>60</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    color: blue;  /* Change la couleur du texte en bleu */
+    font-family: 'Sans-Serif';
+    font-size: 20px;
+    background-color: white;  /* Couleur de fond blanche */
+    border-radius: 20px;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="delete_vec">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>60</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#d1d938;&quot;&gt;employees&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+color:rgb(33, 33, 41);
+font-family: 'Sans-Serif';
+ font-size: 20px;    
+ background-color: rgb(209, 255, 117);;
+border-radius:20px;
+font-color:white;
+
+
+}</string>
+      </property>
+      <property name="text">
+       <string>DELETE</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="research">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>60</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#d1d938;&quot;&gt;employees&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+color:rgb(33, 33, 41);
+font-family: 'Sans-Serif';
+ font-size: 20px;    
+ background-color: rgb(209, 255, 117);;
+border-radius:20px;
+font-color:white;
+
+
+}</string>
+      </property>
+      <property name="text">
+       <string>RESEARCH</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="reloadbutton">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>50</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#d1d938;&quot;&gt;employees&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+color:rgb(33, 33, 41);
+font-family: 'Sans-Serif';
+ font-size: 20px;    
+ background-color: rgb(209, 255, 117);;
+border-radius:20px;
+font-color:white;
+
+
+}</string>
+      </property>
+      <property name="text">
+       <string>Reload</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_tri">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>410</y>
+        <width>191</width>
+        <height>44</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QComboBox {
+    color: rgb(33, 33, 41); /* Text color */
+    font-family: 'Sans-Serif';
+    font-size: 18px;
+    background-color: rgb(209, 255, 117); /* Matches the button background */
+    border: 2px solid rgb(180, 220, 100); /* Slightly darker border for contrast */
+    border-radius: 15px; /* Rounded corners */
+    padding: 5px; /* Padding inside the combobox */
+    min-height: 30px; /* Minimum height for consistency */
+    padding-right: 30px; /* Space for the dropdown arrow */
+}
+
+QComboBox::drop-down {
+    background-color: transparent; /* Transparent background for the dropdown */
+    border: none; /* No border for the dropdown area */
+    width: 30px; /* Space for the dropdown arrow */
+}
+
+QComboBox::down-arrow {
+    image: url(:/icons/down-arrow.png); /* Replace with the path to your arrow icon */
+    width: 15px; /* Width of the arrow icon */
+    height: 15px; /* Height of the arrow icon */
+    margin-right: 5px; /* Space between the arrow and the dropdown border */
+}
+
+QComboBox QAbstractItemView {
+    background-color: rgb(255, 255, 240); /* Dropdown menu background */
+    border: 1px solid rgb(180, 220, 100); /* Border for the dropdown menu */
+    border-radius: 10px; /* Rounded corners for the dropdown */
+    color: rgb(33, 33, 41); /* Text color in the dropdown */
+    font-family: 'Sans-Serif';
+    font-size: 16px;
+}
+</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>All</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>en repos</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>en maintenance</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>repere</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QComboBox" name="comboBox_tri2">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>500</y>
+        <width>191</width>
+        <height>44</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QComboBox {
+    color: rgb(33, 33, 41); /* Text color */
+    font-family: 'Sans-Serif';
+    font-size: 18px;
+    background-color: rgb(209, 255, 117); /* Matches the button background */
+    border: 2px solid rgb(180, 220, 100); /* Slightly darker border for contrast */
+    border-radius: 15px; /* Rounded corners */
+    padding: 5px; /* Padding inside the combobox */
+    min-height: 30px; /* Minimum height for consistency */
+    padding-right: 30px; /* Space for the dropdown arrow */
+}
+
+QComboBox::drop-down {
+    background-color: transparent; /* Transparent background for the dropdown */
+    border: none; /* No border for the dropdown area */
+    width: 30px; /* Space for the dropdown arrow */
+}
+
+QComboBox::down-arrow {
+    image: url(:/icons/down-arrow.png); /* Replace with the path to your arrow icon */
+    width: 15px; /* Width of the arrow icon */
+    height: 15px; /* Height of the arrow icon */
+    margin-right: 5px; /* Space between the arrow and the dropdown border */
+}
+
+QComboBox QAbstractItemView {
+    background-color: rgb(255, 255, 240); /* Dropdown menu background */
+    border: 1px solid rgb(180, 220, 100); /* Border for the dropdown menu */
+    border-radius: 10px; /* Rounded corners for the dropdown */
+    color: rgb(33, 33, 41); /* Text color in the dropdown */
+    font-family: 'Sans-Serif';
+    font-size: 16px;
+}
+</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>All</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Sedan</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>SUV</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Hatchback</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Pickup</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Van</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>CUV</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Mini Truck</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Coupe</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>380</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    color: white; /* Text color matching combobox */
+    font-family: 'Sans-Serif'; /* Consistent font family */
+    font-size: 18px; /* Font size slightly smaller than the combobox */
+    font-weight: bold; /* Make the label text bold for emphasis */
+    background-color: transparent; /* Transparent background */
+    padding: 2px; /* Add slight padding */
+    border: none; /* No border */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Status :</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>460</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+    color: white; /* Text color matching combobox */
+    font-family: 'Sans-Serif'; /* Consistent font family */
+    font-size: 18px; /* Font size slightly smaller than the combobox */
+    font-weight: bold; /* Make the label text bold for emphasis */
+    background-color: transparent; /* Transparent background */
+    padding: 2px; /* Add slight padding */
+    border: none; /* No border */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Type : </string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonQR">
+      <property name="geometry">
+       <rect>
+        <x>884</x>
+        <y>43</y>
+        <width>71</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+color:rgb(33, 33, 41);
+font-family: 'Sans-Serif';
+ font-size: 0px;    
+ background-color: rgb(209, 255, 117);;
+border-radius:20px;
+font-color:white;
+
+
+}</string>
+      </property>
+      <property name="text">
+       <string>QR CODE </string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="statsButton">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>50</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#d1d938;&quot;&gt;employees&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color:rgb(33, 33, 41);
+font-family: 'Sans-Serif';
+ font-size: 20px;    
+ background-color: rgb(209, 255, 117);;
+border-radius:20px;
+font-color:white;
+
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Stats</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonDate">
+    <property name="geometry">
+     <rect>
+      <x>1120</x>
+      <y>50</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+color:rgb(33, 33, 41);
+font-family: 'Sans-Serif';
+ font-size: 20px;    
+ background-color: rgb(209, 255, 117);;
+border-radius:20px;
+font-color:white;
+
+
+}</string>
+    </property>
+    <property name="text">
+     <string>Date check</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widgetchart" native="true">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>700</y>
+      <width>120</width>
+      <height>80</height>
+     </rect>
+    </property>
+   </widget>
+   <zorder>label_2</zorder>
+   <zorder>viewbutton</zorder>
+   <zorder>label_18</zorder>
+   <zorder>pushButton_23</zorder>
+   <zorder>pushButton_24</zorder>
+   <zorder>pushButton_22</zorder>
+   <zorder>pushButton_25</zorder>
+   <zorder>modbutton</zorder>
+   <zorder>pushButton_20</zorder>
+   <zorder>pushButton_19</zorder>
+   <zorder>label_17</zorder>
+   <zorder>pushButton_21</zorder>
+   <zorder>addbutton</zorder>
+   <zorder>stackedWidget</zorder>
+   <zorder>statsButton</zorder>
+   <zorder>pushButtonDate</zorder>
+   <zorder>widgetchart</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
