@@ -5,9 +5,35 @@
 #include <QtCharts/QChartView>
 #include <QtCharts/QPieSeries>
 #include <QDateTime>
+#include <QtSerialPort/QSerialPort>
+#include<QtSerialPort/QSerialPortInfo>
+#include <QSerialPort>
 namespace Ui {
 class MainWindow;
 }
+class Arduino {
+public:
+    Arduino();
+    ~Arduino(); // Destructor to handle cleanup
+
+    int connect_arduino();                // Connect to Arduino
+    void close_arduino();                  // Close the connection
+    void write_to_arduino(const QByteArray &command); // Write data to Arduino
+    QByteArray read_from_arduino();        // Read data from Arduino
+    QSerialPort* getserial();              // Access the serial port object
+    QString getarduino_port_name();        // Get the port name
+
+private:
+    QSerialPort *serial;                   // Serial port object
+    static const quint16 arduino_uno_vendor_id = 9025;  // Vendor ID for Arduino Uno
+    static const quint16 arduino_uno_product_id = 67;
+    QString arduino_port_name;             // Port name
+    bool arduino_is_available;             // Whether Arduino is available
+    QByteArray data;                       // Data buffer
+    //void write_to_arduino(const QByteArray &command);
+    bool is_available();                   // Check Arduino availability
+
+};
 
 class MainWindow : public QMainWindow
 {
@@ -20,6 +46,9 @@ protected:
 protected:
     void showEvent(QShowEvent *event) override; // Declare showEvent
     void setupTableView(); // Declare setupTableView
+
+private slots:
+   // void on_on_clicked();
 
 private:
     Ui::MainWindow *ui;
@@ -59,6 +88,26 @@ private:
     void on_sortByDateEntree_2_clicked();
     void on_tableView_5_clicked(const QModelIndex &index);
     void  on_updateButton_clicked();
+    void on_ard_clicked();
+    void loadServicesToTableView();
+    void on_tableView_3_clicked(const QModelIndex &index);
+    void setupProgressPage();
+    QByteArray data;
+    Arduino A;
+    void  connectArduino();
+    void on_onButton_clicked();
+    void on_offButton_clicked();
+    bool motorOn = false;  // Track motor state
+    Arduino myArduino;     // Declare Arduino as a member of MainWindow
+    QSerialPort *serial;
+    QSerialPort *serialPort;
+    void on_submitButton_clicked();
+    void ensureSerialPortOpen();
+     void readSerialData();
+     QString receivedData;
+     void  incrementTapisValue();
+     void addIncrementedTapisValue();
+
 };
 #include <QStyledItemDelegate>
 #include <QDateTime>

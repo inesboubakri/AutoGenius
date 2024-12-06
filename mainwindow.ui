@@ -417,9 +417,9 @@ background-color: rgb(197, 197, 197);</string>
            <widget class="QLabel" name="label_28">
             <property name="geometry">
              <rect>
-              <x>630</x>
+              <x>610</x>
               <y>10</y>
-              <width>141</width>
+              <width>211</width>
               <height>51</height>
              </rect>
             </property>
@@ -434,7 +434,7 @@ background-color: rgb(197, 197, 197);</string>
            <widget class="QPushButton" name="change">
             <property name="geometry">
              <rect>
-              <x>640</x>
+              <x>610</x>
               <y>20</y>
               <width>121</width>
               <height>31</height>
@@ -468,6 +468,19 @@ background-color: rgb(197, 197, 197);</string>
               <string>done</string>
              </property>
             </item>
+           </widget>
+           <widget class="QPushButton" name="ard">
+            <property name="geometry">
+             <rect>
+              <x>730</x>
+              <y>20</y>
+              <width>91</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>ARDUINO</string>
+            </property>
            </widget>
           </widget>
           <widget class="QWidget" name="clients">
@@ -1329,7 +1342,7 @@ background-color: rgb(197, 197, 197);</string>
            <widget class="QPushButton" name="delettask">
             <property name="geometry">
              <rect>
-              <x>570</x>
+              <x>630</x>
               <y>110</y>
               <width>111</width>
               <height>31</height>
@@ -1337,19 +1350,6 @@ background-color: rgb(197, 197, 197);</string>
             </property>
             <property name="text">
              <string>delete</string>
-            </property>
-           </widget>
-           <widget class="QPushButton" name="updateButton">
-            <property name="geometry">
-             <rect>
-              <x>680</x>
-              <y>110</y>
-              <width>101</width>
-              <height>31</height>
-             </rect>
-            </property>
-            <property name="text">
-             <string>update</string>
             </property>
            </widget>
            <widget class="QComboBox" name="comboBox_2">
@@ -1389,17 +1389,149 @@ background-color: rgb(197, 197, 197);</string>
            </widget>
           </widget>
           <widget class="QWidget" name="permise">
+           <widget class="QLabel" name="label_34">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>10</y>
+              <width>341</width>
+              <height>61</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+background-color: rgb(197, 197, 197);</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
            <widget class="QLabel" name="label_6">
             <property name="geometry">
              <rect>
-              <x>200</x>
-              <y>100</y>
-              <width>281</width>
+              <x>40</x>
+              <y>30</y>
+              <width>91</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(197, 197, 197);</string>
+            </property>
+            <property name="text">
+             <string>ID Service :</string>
+            </property>
+           </widget>
+           <widget class="QTableView" name="tableView_3">
+            <property name="geometry">
+             <rect>
+              <x>80</x>
+              <y>80</y>
+              <width>221</width>
               <height>131</height>
              </rect>
             </property>
+           </widget>
+           <widget class="QWidget" name="progressWidget" native="true">
+            <property name="geometry">
+             <rect>
+              <x>470</x>
+              <y>100</y>
+              <width>301</width>
+              <height>281</height>
+             </rect>
+            </property>
+           </widget>
+           <widget class="QTableView" name="tableView_6">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>280</y>
+              <width>421</width>
+              <height>121</height>
+             </rect>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_35">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>220</y>
+              <width>421</width>
+              <height>51</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+background-color: rgb(197, 197, 197);</string>
+            </property>
             <property name="text">
-             <string>AHMED</string>
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_36">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>229</y>
+              <width>91</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(197, 197, 197);</string>
+            </property>
+            <property name="text">
+             <string>DONE TABLE</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="submitButton">
+            <property name="geometry">
+             <rect>
+              <x>500</x>
+              <y>30</y>
+              <width>131</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>ENTER</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="onButton">
+            <property name="geometry">
+             <rect>
+              <x>660</x>
+              <y>10</y>
+              <width>93</width>
+              <height>29</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>ON</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="offButton">
+            <property name="geometry">
+             <rect>
+              <x>660</x>
+              <y>50</y>
+              <width>93</width>
+              <height>29</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>OFF</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="lineEdit_ss">
+            <property name="geometry">
+             <rect>
+              <x>150</x>
+              <y>25</y>
+              <width>171</width>
+              <height>31</height>
+             </rect>
             </property>
            </widget>
           </widget>

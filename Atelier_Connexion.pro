@@ -10,6 +10,7 @@ QT += core gui printsupport
 QT += widgets
 QT += axcontainer axserver
 QT += charts
+QT +=serialport
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = Atelier_Connexion

@@ -20,8 +20,47 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    serial = new QSerialPort(this); // Ensure serial is properly initialized
     service E;
     ui->stackedWidget->setCurrentIndex(0);
+    QSerialPort serial;
+    serial.setPortName("COM3");
+    Arduino A;  // Create an instance of the Arduino class
+
+    int ret = A.connect_arduino();
+
+    switch (ret) {
+        case 0:
+            qDebug() << "Arduino is available and connected to:" << A.getarduino_port_name();
+            break;
+        case 1:
+            qDebug() << "Arduino is available but could not be connected to:" << A.getarduino_port_name();
+            break;
+        case 2:
+            qDebug() << "Arduino is not available";
+            break;
+    }
+
+
+    bool verbose = true; // Toggle for detailed debugging
+    if (verbose) {
+        foreach (const QSerialPortInfo &info, QSerialPortInfo::availablePorts()) {
+            qDebug() << "Port detected:" << info.portName() << ", Description:" << info.description();
+            if (info.hasVendorIdentifier() && info.hasProductIdentifier()) {
+                qDebug() << "Vendor ID:" << info.vendorIdentifier()
+                         << ", Product ID:" << info.productIdentifier();
+            }
+        }
+    }
+
+
+    if (myArduino.getserial()->isOpen()) {
+        qDebug() << "Arduino connection is open.";
+    } else {
+        qDebug() << "Arduino is not connected.";
+    }
+
+
        connect(ui->ADD, &QPushButton::clicked, this, &MainWindow::on_ADD_clicked);
        connect(ui->upd, &QPushButton::clicked, this, &MainWindow::on_upd_clicked);
        connect(ui->dlet, &QPushButton::clicked, this, &MainWindow::on_dlet_clicked);
@@ -55,7 +94,16 @@ MainWindow::MainWindow(QWidget *parent) :
        connect(ui->suggestPhoto, &QPushButton::clicked, this, &::MainWindow:: on_suggestPhoto_clicked);
        connect(ui->sortByDateEntree_2, &QPushButton::clicked, this, &::MainWindow::on_sortByDateEntree_2_clicked);
        connect(ui->tableView_5, &QTableView::clicked, this, &MainWindow::on_tableView_5_clicked);
-       connect(ui->updateButton, &QPushButton::clicked, this, &MainWindow::on_updateButton_clicked);
+      // connect(ui->updateButton, &QPushButton::clicked, this, &MainWindow::on_updateButton_clicked);
+
+        connect(ui->ard, &QPushButton::clicked, this, &::MainWindow:: on_ard_clicked);
+        connect(ui->tableView_3, &QTableView::clicked, this, &::MainWindow::on_tableView_3_clicked);
+        connect(ui->onButton, &QPushButton::clicked, this, &MainWindow::on_onButton_clicked);
+        connect(ui->offButton, &QPushButton::clicked, this, &MainWindow::on_offButton_clicked);
+
+        connect(ui->submitButton, &QPushButton::clicked, this, &::MainWindow::on_submitButton_clicked);
+
+
 
 
 
@@ -66,6 +114,490 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+//arduino//
+// Constructor
+Arduino::Arduino() {
+    serial = new QSerialPort();
+    arduino_is_available = false;
+    arduino_port_name = "";
+}
+
+// Destructor
+Arduino::~Arduino() {
+    if (serial->isOpen()) {
+        serial->close();
+    }
+    delete serial;
+}
+
+// Check if Arduino is available and set up the port name
+bool Arduino::is_available() {
+    foreach (const QSerialPortInfo &info, QSerialPortInfo::availablePorts()) {
+        if (info.hasVendorIdentifier() && info.hasProductIdentifier()) {
+            if (info.vendorIdentifier() == arduino_uno_vendor_id &&
+                info.productIdentifier() == arduino_uno_product_id) {
+                arduino_port_name = info.portName();
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+// Connect to Arduino
+// Arduino connection handling
+
+int Arduino::connect_arduino() {
+    // Check if serial is initialized
+    if (!serial) {
+        serial = new QSerialPort();
+    }
+
+    qDebug() << "Checking available ports...";
+    arduino_port_name.clear();
+    arduino_is_available = false;
+
+    // Scan available ports
+    foreach (const QSerialPortInfo &info, QSerialPortInfo::availablePorts()) {
+        qDebug() << "Detected port:" << info.portName() << ", Description:" << info.description();
+        if (info.hasVendorIdentifier() && info.hasProductIdentifier()) {
+            if (info.vendorIdentifier() == arduino_uno_vendor_id &&
+                info.productIdentifier() == arduino_uno_product_id) {
+                arduino_port_name = info.portName();
+                arduino_is_available = true;
+                break;
+            }
+        }
+    }
+
+    if (!arduino_is_available) {
+        qDebug() << "Arduino not found.";
+        return 2; // Arduino is not available
+    }
+
+    qDebug() << "Attempting to open port: " << arduino_port_name;
+    serial->setPortName(arduino_port_name);
+    if (serial->open(QIODevice::ReadWrite)) {
+        serial->setBaudRate(QSerialPort::Baud9600);
+        serial->setDataBits(QSerialPort::Data8);
+        serial->setParity(QSerialPort::NoParity);
+        serial->setStopBits(QSerialPort::OneStop);
+        serial->setFlowControl(QSerialPort::NoFlowControl);
+        qDebug() << "Arduino connected successfully!";
+        return 0; // Successfully connected
+    } else {
+        qDebug() << "Failed to open the port: " << arduino_port_name;
+        return 1; // Arduino available but not connected
+    }
+}
+
+// Close the connection
+void Arduino::close_arduino() {
+    if (serial->isOpen()) {
+        serial->close();
+    }
+}
+
+// Write data to Arduino
+void Arduino::write_to_arduino(const QByteArray &command) {
+    // Check if port is already open, and close if necessary
+    if (serial->isOpen()) {
+        serial->close();  // Close the port if already open
+    }
+
+    qDebug() << "Opening serial port...";
+    serial->setPortName("COM3");  // Set the correct port
+    serial->setBaudRate(QSerialPort::Baud9600);  // Set the baud rate
+
+    if (!serial->open(QIODevice::ReadWrite)) {
+        qDebug() << "Failed to open serial port:" << serial->errorString();
+        return;
+    }
+
+    serial->write(command);  // Send the data
+    serial->flush();         // Ensure data is transmitted
+    qDebug() << "Data sent to Arduino:" << command;
+}
+
+
+// Read data from Arduino
+QByteArray Arduino::read_from_arduino() {
+    if (serial->isOpen() && serial->isReadable()) {
+        data = serial->readAll();
+    }
+    return data;
+}
+
+// Get the serial port object
+QSerialPort* Arduino::getserial() {
+    return serial;
+}
+
+// Get the Arduino port name
+QString Arduino::getarduino_port_name() {
+    return arduino_port_name;
+}
+
+void MainWindow::on_ard_clicked(){
+    ui->stackedWidget->setCurrentIndex(6);
+    loadServicesToTableView();
+    setupProgressPage();
+    Arduino myArduino;
+    int connection_status = myArduino.connect_arduino();
+
+        if (connection_status == 0) {
+            QMessageBox::information(this, "Arduino Connection",
+                                     "Arduino connected successfully on port: " + myArduino.getarduino_port_name());
+            ui->stackedWidget->setCurrentIndex(6);
+        } else if (connection_status == -1) {
+            QMessageBox::critical(this, "Arduino Connection", "Arduino not found. Please check your connection.");
+        } else if (connection_status == -2) {
+            QMessageBox::critical(this, "Arduino Connection", "Failed to open Arduino port. Please check your setup.");
+        }
+}
+void MainWindow::loadServicesToTableView() {
+    // Create a QSqlQuery object
+    QSqlQuery query;
+
+    // Prepare query to fetch only ID_SERVICE and DATE_TASK from TASK table
+    if (!query.prepare("SELECT ID_SERVICE, SERVICE FROM TASK")) {
+        QMessageBox::critical(this, "Query Error", "Failed to prepare query: " + query.lastError().text());
+        return;
+    }
+
+    // Execute the query
+    if (!query.exec()) {
+        QMessageBox::critical(this, "Query Error", "Failed to execute query: " + query.lastError().text());
+        return;
+    }
+
+    // Set up the model for the QTableView
+    QSqlQueryModel *model = new QSqlQueryModel;
+
+    // Move the query object into the model (no copy, passing by move)
+    model->setQuery(std::move(query));
+
+    // Check if the query execution returned data
+    if (model->rowCount() > 0) {
+        // Set the model to the QTableView to display data
+        ui->tableView_3->setModel(model);
+    } else {
+        QMessageBox::information(this, "No Data", "No data found in the TASK table.");
+    }
+}
+void MainWindow::on_tableView_3_clicked(const QModelIndex &index) {
+    // Ensure the clicked row is valid
+    if (index.isValid()) {
+        // Only process the ID_SERVICE column (assuming it's the first column, index 0)
+        if (index.column() == 0) {  // column 0 is assumed to be ID_SERVICE
+            // Get the data from the clicked cell (ID_SERVICE)
+            QString idService = index.data().toString();
+
+            // Set the ID_SERVICE into the lineEdit_9
+            ui->lineEdit_ss->setText(idService);
+        }
+    }
+}
+void MainWindow::setupProgressPage()
+{
+    qDebug() << "Setting up progress page";
+
+    // Check if the progress bar widget exists
+    if (!ui->progressWidget) {
+        qDebug() << "Error: ui->progressWidget is null!";
+        return;
+    }
+
+    // Create a new progress bar
+    QProgressBar *progressBar = new QProgressBar(ui->progressWidget);
+    progressBar->setRange(0, 100);      // Set the range from 0 to 100
+    progressBar->setValue(0);           // Start with 0%
+    progressBar->setTextVisible(true);  // Show the percentage
+
+    // Customize appearance with a gradient and a smoother look
+    progressBar->setStyleSheet("QProgressBar {"
+                               "border: 2px solid #4CAF50;"
+                               "border-radius: 5px;"
+                               "background: #e0f7fa;"
+                               "}"
+                               "QProgressBar::chunk {"
+                               "background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #4CAF50, stop:1 #1E88E5);"
+                               "border-radius: 5px;"
+                               "}");
+
+    // Clear existing layout if present
+    if (ui->progressWidget->layout()) {
+        QLayoutItem *child;
+        while ((child = ui->progressWidget->layout()->takeAt(0)) != nullptr) {
+            delete child->widget();
+            delete child;
+        }
+    }
+
+    // Set a new layout if needed and add the progress bar
+    if (!ui->progressWidget->layout()) {
+        QVBoxLayout *layout = new QVBoxLayout(ui->progressWidget);
+        ui->progressWidget->setLayout(layout);
+    }
+    ui->progressWidget->layout()->addWidget(progressBar);
+
+    // Create a timer to update the progress bar
+    QTimer *progressTimer = new QTimer(this);
+    int *progressValue = new int(0);  // Dynamic variable to track progress
+
+    connect(progressTimer, &QTimer::timeout, [=]() {
+        if (*progressValue <= 100) {
+            progressBar->setValue(*progressValue); // Update the progress bar
+            progressBar->setFormat(QString::number(*progressValue) + "%"); // Show percentage
+            *progressValue += 10;                 // Increment progress smoothly
+        } else {
+            progressTimer->stop();                // Stop the timer when complete
+            qDebug() << "Service completed!";
+
+            // Show a message box indicating the service is complete
+            QMessageBox::information(this, "Service Completed",
+                                     "The service related to this ID is now finished!",
+                                     QMessageBox::Ok);
+
+            delete progressValue;                 // Clean up dynamic variable
+        }
+    });
+
+    // Start the timer to update every 500 ms (smoother transition)
+    progressTimer->start(500);
+}
+// Make sure the Arduino object is created only once
+// Inside your MainWindow class
+Arduino myArduino;  // Make sure this is defined as a member of MainWindow
+void MainWindow::connectArduino() {
+    if (!myArduino.getserial()->isOpen()) {
+        myArduino.getserial()->setPortName("COM3");
+        myArduino.getserial()->setBaudRate(QSerialPort::Baud9600);
+        if (!myArduino.getserial()->open(QIODevice::ReadWrite)) {
+            qDebug() << "Failed to open serial port:" << myArduino.getserial()->errorString();
+            QMessageBox::warning(this, "Error", "Arduino is not connected!");
+            return;
+        }
+    }
+}
+void MainWindow::on_onButton_clicked() {
+    if (!motorOn) {  // Check if motor is off
+        if (!myArduino.getserial()->isOpen()) {
+            myArduino.getserial()->setPortName("COM3");
+            myArduino.getserial()->setBaudRate(QSerialPort::Baud9600);
+            if (!myArduino.getserial()->open(QIODevice::ReadWrite)) {
+                qDebug() << "Failed to open serial port:" << myArduino.getserial()->errorString();
+                QMessageBox::warning(this, "Error", "Arduino is not connected!");
+                return;
+            }
+        }
+        motorOn = true;  // Set motor state to on
+        QByteArray command;
+        command.append("1");  // Append the character '1' to the QByteArray
+        qDebug() << "Sending command:" << command;
+        myArduino.write_to_arduino(command);  // Send the command to Arduino
+        QMessageBox::information(this, "Motor Status", "The motor is now ON.");
+        incrementTapisValue();
+    }
+}
+
+void MainWindow::on_offButton_clicked() {
+    if (motorOn) {  // Check if motor is on
+        motorOn = false;  // Set motor state to off
+        QByteArray command;
+        command.append("0");  // Append the character '0' to the QByteArray
+        qDebug() << "Sending command:" << command;
+        myArduino.write_to_arduino(command);  // Send the command to Arduino
+        QMessageBox::information(this, "Motor Status", "The motor is now OFF.");
+         incrementTapisValue();
+    }
+}
+void MainWindow::incrementTapisValue() {
+    // Increment the TAPIS value in the database by 1
+    QSqlQuery query;
+    query.prepare("UPDATE TAPIS SET TAP = TAP + 1");  // This will increment the TAP value in the table
+    if (!query.exec()) {
+        qDebug() << "Failed to update TAPIS value:" << query.lastError().text();
+    } else {
+        qDebug() << "TAPIS value updated successfully.";
+    }
+}
+
+void MainWindow::addIncrementedTapisValue() {
+    QSqlQuery query;
+
+    // Get the current max value of TAP
+    query.prepare("SELECT MAX(TAP) FROM TAPIS");
+    if (!query.exec()) {
+        qDebug() << "Failed to get max TAP value:" << query.lastError().text();
+        return;
+    }
+
+    int currentMaxTAP = 0;
+    if (query.next()) {
+        currentMaxTAP = query.value(0).toInt();
+    }
+
+    // Insert a new record with TAP incremented by 1
+    query.prepare("INSERT INTO TAPIS (TAP) VALUES (:newTap)");
+    query.bindValue(":newTap", currentMaxTAP + 1);
+
+    if (!query.exec()) {
+        qDebug() << "Failed to insert new TAPIS record with incremented TAP:" << query.lastError().text();
+    } else {
+        qDebug() << "New TAPIS record with incremented TAP added successfully.";
+    }
+}
+void MainWindow::on_submitButton_clicked() {
+    QSqlQuery query;
+
+    // Update TAP value for the record where ID_TAP = 12
+    query.prepare("UPDATE TAPIS SET TAP = TAP + 1 WHERE ID_TAP = 12");
+
+    if (!query.exec()) {
+        qDebug() << "Failed to update TAPIS values:" << query.lastError().text();
+        QMessageBox::warning(this, "Error", "Failed to update TAPIS value.");
+    } else {
+        qDebug() << "TAPIS value updated successfully for ID_TAP = 12.";
+        QMessageBox::information(this, "Success", "TAPIS value updated for ID_TAP = 12.");
+    }
+}
+
+
+
+/*
+void MainWindow::on_submitButton_clicked() {
+    // Get and trim spaces from the service ID input
+    QString serviceID = ui->lineEdit_ss->text().trimmed();
+
+    if (serviceID.isEmpty()) {
+        QMessageBox::warning(this, "Input Error", "Please enter a valid service ID.");
+        return;
+    }
+
+    // Ensure serial port is open before proceeding
+    ensureSerialPortOpen();
+
+    // Create and prepare the SQL query
+    QSqlQuery query;
+    query.prepare("SELECT SERVICE FROM TASK WHERE ID_SERVICE = :id");
+    query.bindValue(":id", serviceID);
+
+    qDebug() << "Looking for service ID: " << serviceID;
+
+    if (query.exec()) {
+        if (query.next()) {
+            QString serviceType = query.value(0).toString();
+            qDebug() << "Found service type: " << serviceType;
+
+            // Determine command based on service type
+            QString command;
+            if (serviceType.contains("vidange", Qt::CaseInsensitive) || serviceType.contains("oil change", Qt::CaseInsensitive)) {
+                command = "VIDANGE";
+            } else if (serviceType.contains("battery check", Qt::CaseInsensitive) || serviceType.contains("engine check", Qt::CaseInsensitive)) {
+                command = "BATTERY";
+            } else if (serviceType.contains("diagnostique", Qt::CaseInsensitive)) {
+                command = "DIAGNOSTIQUE";
+            } else {
+                QMessageBox::warning(this, "Unknown Service", "Unknown service type found in database.", QMessageBox::Ok);
+                return;
+            }
+
+            qDebug() << "Sending command: " << command;
+
+            // Check if the port is open before writing to it
+            if (serial->isOpen()) {
+                serial->write(command.toUtf8());
+                qDebug() << "Data sent to Arduino: " << command;
+            } else {
+                QMessageBox::critical(this, "Error", "Serial port is not open.", QMessageBox::Ok);
+                return;
+            }
+
+            // Check if data was written successfully
+            if (serial->bytesToWrite() == 0) {
+                QMessageBox::critical(this, "Error", "Failed to write to serial port.", QMessageBox::Ok);
+            } else {
+                QMessageBox::information(this, "Command Sent", "Command sent to Arduino: " + command);
+            }
+        } else {
+            QMessageBox::critical(this, "Error", "Service ID not found in the database.", QMessageBox::Ok);
+        }
+    } else {
+        qDebug() << "Query failed: " << query.lastError();
+        QMessageBox::critical(this, "Error", "Failed to execute query: " + query.lastError().text(), QMessageBox::Ok);
+    }
+
+    // Now, we also need to handle data received from Arduino
+    QByteArray data = serial->readAll();
+    QString sensorDetected = QString::fromUtf8(data).trimmed();
+
+    if (!sensorDetected.isEmpty()) {
+        QMessageBox::information(this, "Obstacle Detected", "Obstacle detected by: " + sensorDetected);
+    }
+}
+*/
+void MainWindow::ensureSerialPortOpen() {
+    if (serial->isOpen()) {
+        qDebug() << "Serial port is already open.";
+        return;  // If the port is already open, do nothing
+    }
+
+    // List available ports for debugging
+    foreach (const QSerialPortInfo &info, QSerialPortInfo::availablePorts()) {
+        qDebug() << "Available Port: " << info.portName() << " Description: " << info.description();
+    }
+
+    // Attempt to open the port
+    bool isOpened = serial->open(QIODevice::ReadWrite);
+    if (!isOpened) {
+        qDebug() << "Serial port open error: " << serial->errorString(); // Debugging the error
+        QMessageBox::critical(this, "Error", "Failed to open serial port: " + serial->errorString(), QMessageBox::Ok);
+        return;
+    }
+
+    // Set the parameters after opening the port
+    serial->setBaudRate(QSerialPort::Baud9600);
+    serial->setDataBits(QSerialPort::Data8);
+    serial->setParity(QSerialPort::NoParity);
+    serial->setStopBits(QSerialPort::OneStop);
+    serial->setFlowControl(QSerialPort::NoFlowControl);
+
+    // Check if the port is now open
+    if (serial->isOpen()) {
+        qDebug() << "Serial port opened successfully.";
+    } else {
+        qDebug() << "Failed to open serial port.";
+    }
+}
+
+void MainWindow::readSerialData()
+{
+    if (serialPort->bytesAvailable() > 0) {
+        QByteArray data = serialPort->readAll();
+        QString receivedData = QString::fromUtf8(data).trimmed();
+        qDebug() << "Received Data: " << receivedData;
+
+        if (receivedData == "VIDANGE") {
+            motorOn = false; // Motor is off
+            QMessageBox::information(this, "Motor Stopped", "Motor stopped by Vidange sensor.");
+        } else if (receivedData == "BATTERY") {
+            motorOn = false; // Motor is off
+            QMessageBox::information(this, "Motor Stopped", "Motor stopped by Battery sensor.");
+        } else if (receivedData == "DIAGNOSTIC") {
+            motorOn = false; // Motor is off
+            QMessageBox::information(this, "Motor Stopped", "Motor stopped by Diagnostic sensor.");
+        } else if (receivedData == "OBSTACLE") {
+            motorOn = false; // Motor is off due to obstacle
+            QMessageBox::information(this, "Motor Stopped", "Motor stopped due to obstacle.");
+        } else {
+            motorOn = true;  // Motor is running normally
+        }
+    }
+}
+
+
+//********************************************************************************************************************************arduino*************************************************************//
 void MainWindow::on_ser_Clicked(){
     ui->stackedWidget->setCurrentIndex(0);
 }
@@ -857,3 +1389,5 @@ void MainWindow::on_suggestPhoto_clicked() {
         ui->label_21->setPixmap(pixmap2.scaled(ui->label_21->size(), Qt::KeepAspectRatio));
     }
 }
+
+
