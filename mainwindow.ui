@@ -1,0 +1,2432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1282</width>
+    <height>716</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 0, 127);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_5">
+    <item row="0" column="0">
+     <widget class="QWidget" name="widget" native="true">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QFrame" name="frame_2">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Shape::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Shadow::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="img.qrc">:/qt/carc.png</pixmap>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>WELCOME</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_9">
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 5px;
+padding: 5px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="img.qrc">
+              <normaloff>:/qt/format_justify_center.png</normaloff>:/qt/format_justify_center.png</iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonhome">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+         </property>
+         <property name="text">
+          <string>Home</string>
+         </property>
+         <property name="icon">
+          <iconset resource="img.qrc">
+           <normaloff>:/qt/1.png</normaloff>:/qt/1.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonclient">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+         </property>
+         <property name="text">
+          <string>Client</string>
+         </property>
+         <property name="icon">
+          <iconset resource="img.qrc">
+           <normaloff>:/qt/wired-outline-21-avatar-hover-jumping.png</normaloff>:/qt/wired-outline-21-avatar-hover-jumping.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonpartenaire">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+         </property>
+         <property name="text">
+          <string>Partenaire</string>
+         </property>
+         <property name="icon">
+          <iconset resource="img.qrc">
+           <normaloff>:/qt/target.png</normaloff>:/qt/target.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonemploye">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+         </property>
+         <property name="text">
+          <string>employé</string>
+         </property>
+         <property name="icon">
+          <iconset resource="img.qrc">
+           <normaloff>:/qt/hand-shake.png</normaloff>:/qt/hand-shake.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonservice">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+         </property>
+         <property name="text">
+          <string>Service</string>
+         </property>
+         <property name="icon">
+          <iconset resource="img.qrc">
+           <normaloff>:/qt/open-hand.png</normaloff>:/qt/open-hand.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonvehicule">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+         </property>
+         <property name="text">
+          <string>Véhicule</string>
+         </property>
+         <property name="icon">
+          <iconset resource="img.qrc">
+           <normaloff>:/qt/wired-outline-860-electric-car-hover-pinch.png</normaloff>:/qt/wired-outline-860-electric-car-hover-pinch.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonlocaux">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+         </property>
+         <property name="text">
+          <string>Locaux</string>
+         </property>
+         <property name="icon">
+          <iconset resource="img.qrc">
+           <normaloff>:/qt/wired-outline-2020-wroclaw-city-hover-pinch.png</normaloff>:/qt/wired-outline-2020-wroclaw-city-hover-pinch.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtondeconnecter">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+         </property>
+         <property name="text">
+          <string>Déconnecter</string>
+         </property>
+         <property name="icon">
+          <iconset theme="QIcon::ThemeIcon::SystemShutdown"/>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QFrame" name="frame">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0">
+        <widget class="QStackedWidget" name="stackedWidget">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="currentIndex">
+          <number>3</number>
+         </property>
+         <widget class="QWidget" name="home">
+          <widget class="QLabel" name="label_14">
+           <property name="geometry">
+            <rect>
+             <x>390</x>
+             <y>230</y>
+             <width>63</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>home</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="client">
+          <widget class="QLabel" name="label_12">
+           <property name="geometry">
+            <rect>
+             <x>370</x>
+             <y>220</y>
+             <width>63</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>client</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="partenaire">
+          <widget class="QLabel" name="label_15">
+           <property name="geometry">
+            <rect>
+             <x>330</x>
+             <y>240</y>
+             <width>141</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>partenaire</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="employe">
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QFrame" name="frame_15">
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_9">
+              <item>
+               <widget class="QPushButton" name="pushButton_emp_ajouter">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+                </property>
+                <property name="text">
+                 <string>Ajouter</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_emp_modifier">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+                </property>
+                <property name="text">
+                 <string>Modifier</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_13">
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <item>
+               <widget class="QLabel" name="label_56">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;
+padding: 5px;</string>
+                </property>
+                <property name="text">
+                 <string>recherche par CIN:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="researchcinemp">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;
+padding: 5px;</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_emp_delete">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+                </property>
+                <property name="text">
+                 <string>Delete</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_emp_edit">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+                </property>
+                <property name="text">
+                 <string>Edit</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_16">
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_10">
+              <item>
+               <widget class="QComboBox" name="comboBox_emp">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;
+padding: 5px;</string>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>CIN_EMPLOYE</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>NUMERO_TELEPHONE</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_emp_tri">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+                </property>
+                <property name="text">
+                 <string>Tri</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton__pdf">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+                </property>
+                <property name="text">
+                 <string>PDF</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_emp_stat">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+                </property>
+                <property name="text">
+                 <string>Stat</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_14">
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_8">
+              <item>
+               <widget class="QTableView" name="tableView_emp">
+                <property name="styleSheet">
+                 <string notr="true">background-color:rgb(255, 255, 255);border-radius: 10px;
+</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="statemp">
+          <layout class="QVBoxLayout" name="verticalLayout_17">
+           <item>
+            <widget class="QFrame" name="frame_27">
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_18">
+              <item>
+               <widget class="QGraphicsView" name="graphicsView"/>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_28">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_17">
+              <item>
+               <widget class="QPushButton" name="pushButtonstatempsortir">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+                </property>
+                <property name="text">
+                 <string>Sortir</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="addemp">
+          <layout class="QVBoxLayout" name="verticalLayout_14">
+           <item>
+            <widget class="QFrame" name="frame_24">
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_16">
+              <item>
+               <widget class="QFrame" name="frame_25">
+                <property name="frameShape">
+                 <enum>QFrame::Shape::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Shadow::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_15">
+                 <item>
+                  <widget class="QLabel" name="label_46">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;</string>
+                   </property>
+                   <property name="text">
+                    <string>CIN</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_54">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Nom</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_48">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Prenom</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_55">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Email</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_50">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Date de naissance</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_53">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Mot de passe</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_47">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Numero telephone</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_51">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Poste</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_49">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Adresse</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_52">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Sexe</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_26">
+                <property name="frameShape">
+                 <enum>QFrame::Shape::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Shadow::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_16">
+                 <item>
+                  <widget class="QLineEdit" name="lineEditempaddcin">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 7px;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEditempaddnom">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 7px;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEditempaddprenom">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 7px;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEditempaddemail">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 7px;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QDateEdit" name="dateEditempadd">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 10px;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEditempaddmdp">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 7px;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEditempaddnum">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 7px;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEditempaddposte">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 7px;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEditempaddadresse">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 7px;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="comboBoxempadd">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 7px;</string>
+                   </property>
+                   <item>
+                    <property name="text">
+                     <string>HOMME</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>FEMME</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_21">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_15">
+              <item>
+               <widget class="QPushButton" name="pushButtonempaddajouter">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+                </property>
+                <property name="text">
+                 <string>Ajouter</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_empajoutersortir">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+                </property>
+                <property name="text">
+                 <string>Sortir</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="modemp">
+          <layout class="QVBoxLayout" name="verticalLayout_9">
+           <item>
+            <widget class="QFrame" name="frame_17">
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_12">
+              <item>
+               <widget class="QFrame" name="frame_19">
+                <property name="frameShape">
+                 <enum>QFrame::Shape::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Shadow::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_10">
+                 <item>
+                  <widget class="QLabel" name="label_30">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 7px;</string>
+                   </property>
+                   <property name="text">
+                    <string>CIN</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_13">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 7px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Nom</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_32">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 7px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Prenom</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_31">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 7px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Email</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_33">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 7px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Date de naissance</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_27">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 7px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Mot de passe</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_35">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 7px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Numero telephone</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_28">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 7px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Poste</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_34">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 7px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Adresse</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_29">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 7px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Sexe</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_20">
+                <property name="frameShape">
+                 <enum>QFrame::Shape::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Shadow::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_11">
+                 <item>
+                  <widget class="QLineEdit" name="lineEditempmodcin">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 5px;
+padding:7px;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEditempmodnom">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 5px;
+padding:7px;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEditempmodprenom">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 5px;
+padding:7px;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEditempmodemail">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 5px;
+padding:7px;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QDateEdit" name="dateEditempmod">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 5px;
+</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEditempmodmdp">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 5px;
+padding:7px;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEditempmodnum">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 5px;
+padding:7px;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEditempmodposte">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 5px;
+padding:7px;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEditempmodadresse">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 5px;
+padding:7px;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="comboBoxempmod">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 5px;
+padding:7px;</string>
+                   </property>
+                   <item>
+                    <property name="text">
+                     <string>HOMME</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>FEMME</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_18">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_11">
+              <item>
+               <widget class="QPushButton" name="pushButton_empmodmod">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+                </property>
+                <property name="text">
+                 <string>Modifier</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_empmodsortir">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+                </property>
+                <property name="text">
+                 <string>Sortir</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="service">
+          <widget class="QLabel" name="label_16">
+           <property name="geometry">
+            <rect>
+             <x>420</x>
+             <y>260</y>
+             <width>63</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>service</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="vehicule">
+          <widget class="QLabel" name="label_17">
+           <property name="geometry">
+            <rect>
+             <x>230</x>
+             <y>260</y>
+             <width>63</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>vehicule</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="locaux">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="QFrame" name="frame_3">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_4">
+              <item>
+               <widget class="QPushButton" name="loc_addButton">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+                </property>
+                <property name="text">
+                 <string>Ajouter</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="loc_modButton">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+                </property>
+                <property name="text">
+                 <string>Modifier</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="loc_delButton">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+                </property>
+                <property name="text">
+                 <string>Supprimer</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_4">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_3">
+              <item>
+               <widget class="QPushButton" name="pushButton_locexel">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+                </property>
+                <property name="text">
+                 <string>Exel</string>
+                </property>
+                <property name="icon">
+                 <iconset theme="QIcon::ThemeIcon::DocumentOpen"/>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_locPDF">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+                </property>
+                <property name="text">
+                 <string>PDF</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="img.qrc">
+                  <normaloff>:/qt/pdf-file.png</normaloff>:/qt/pdf-file.png</iconset>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_locstat">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+                </property>
+                <property name="text">
+                 <string>Stat</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_lochistory">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+                </property>
+                <property name="text">
+                 <string>Historique</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="img.qrc">
+                  <normaloff>:/qt/history.png</normaloff>:/qt/history.png</iconset>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_maps">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+                </property>
+                <property name="text">
+                 <string>Maps</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="img.qrc">
+                  <normaloff>:/qt/wired-outline-18-location-pin-hover-jump.png</normaloff>:/qt/wired-outline-18-location-pin-hover-jump.png</iconset>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_12">
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_8">
+              <item>
+               <widget class="QComboBox" name="comboBox_loctri">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;
+padding: 5px;</string>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Nombre_employees</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Capacite_vehicule</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>CIN</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_loctri">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+                </property>
+                <property name="text">
+                 <string>tri</string>
+                </property>
+                <property name="icon">
+                 <iconset theme="QIcon::ThemeIcon::FormatJustifyLeft"/>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="comboBox_locrecherche">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;
+padding: 5px;</string>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Nom_locale</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Nom_manager</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Adresse</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="lineEdit_locrecherche">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;
+padding: 5px;</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton_locrecherche">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+                </property>
+                <property name="text">
+                 <string>recherche</string>
+                </property>
+                <property name="icon">
+                 <iconset resource="img.qrc">
+                  <normaloff>:/qt/loupe.png</normaloff>:/qt/loupe.png</iconset>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_5">
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_5">
+              <item>
+               <widget class="QTableView" name="tableViewloc">
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="lochistory">
+          <layout class="QGridLayout" name="gridLayout_6">
+           <item row="1" column="0" colspan="2">
+            <widget class="QPushButton" name="pushButton_lochis_sortir">
+             <property name="styleSheet">
+              <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+             </property>
+             <property name="text">
+              <string>Sortir</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QTableView" name="tablelochistory">
+             <property name="styleSheet">
+              <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 10px;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="locmod">
+          <layout class="QGridLayout" name="gridLayout_3">
+           <item row="1" column="0">
+            <widget class="QPushButton" name="pushButton_locmod_modifier">
+             <property name="styleSheet">
+              <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+             </property>
+             <property name="text">
+              <string>Modifier</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QPushButton" name="pushButton_locmod_sortir">
+             <property name="styleSheet">
+              <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+             </property>
+             <property name="text">
+              <string>Sortir</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QTableView" name="tableViewlocmod">
+             <property name="styleSheet">
+              <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 10px;</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QFrame" name="frame_9">
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_7">
+              <item>
+               <widget class="QFrame" name="frame_11">
+                <property name="frameShape">
+                 <enum>QFrame::Shape::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Shadow::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_6">
+                 <item>
+                  <widget class="QLabel" name="label_19">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 5px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Nom_locale</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_21">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 5px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Adresse</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_22">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 5px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Nom_manager</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_23">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 5px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Statut</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_26">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 5px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Services_disponibles</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_24">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 5px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Nombre_employées</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_25">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 5px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Capacité_véhicule</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_20">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 5px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Numéro_téléphone</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_18">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 5px;</string>
+                   </property>
+                   <property name="text">
+                    <string>CIN_EMPLOYEES</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_10">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Shape::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Shadow::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_7">
+                 <item>
+                  <widget class="QLineEdit" name="lineEdit_locmod_nomlocale">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 5px;
+padding: 5px;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEdit_locmod_adresse">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 5px;
+padding: 5px;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEdit_locmod_nommanager">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 5px;
+padding: 5px;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="comboBox_locmod">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 5px;
+padding: 5px;</string>
+                   </property>
+                   <item>
+                    <property name="text">
+                     <string>disponible</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>occupe</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>reserve</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>maintenance</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>ferme</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEdit_locmod_service">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 5px;
+padding: 5px;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEdit_locmod_nombre">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 5px;
+padding: 5px;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEdit_locmod_capacite">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 5px;
+padding: 5px;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEdit_locmod_numero">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 5px;
+padding: 5px;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEdit_locmod_cin">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 5px;
+padding: 5px;</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="locdel">
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="1" column="0">
+            <widget class="QPushButton" name="pushButton_locdel_supprimer">
+             <property name="styleSheet">
+              <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+             </property>
+             <property name="text">
+              <string>Supprimer</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QPushButton" name="pushButton_locdel_sortir">
+             <property name="styleSheet">
+              <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+             </property>
+             <property name="text">
+              <string>Sortir</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0" colspan="2">
+            <widget class="QTableView" name="tableViewlocdel">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="locadd">
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="1" column="0">
+            <widget class="QPushButton" name="pushButtonlocadd_ajouter">
+             <property name="styleSheet">
+              <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+             </property>
+             <property name="text">
+              <string>Ajouter</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QPushButton" name="pushButtonlocadd_sortir">
+             <property name="styleSheet">
+              <string notr="true">QPushButton
+{
+background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;
+}
+
+QPushButton:Hover {
+				background-color: rgb(159, 159, 159);
+				border-color: rgb(159, 159, 159);}
+</string>
+             </property>
+             <property name="text">
+              <string>Sortir</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0" colspan="2">
+            <widget class="QFrame" name="frame_6">
+             <property name="frameShape">
+              <enum>QFrame::Shape::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Shadow::Raised</enum>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_6">
+              <item>
+               <widget class="QFrame" name="frame_7">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Shape::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Shadow::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_4">
+                 <item>
+                  <widget class="QLabel" name="label_3">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Nom_locale</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_8">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Adresse</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_4">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Nom_manager</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_7">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Statut</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_5">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Services_disponibles</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_10">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Nombre_employées</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_9">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Capacité_véhicule</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_6">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;</string>
+                   </property>
+                   <property name="text">
+                    <string>Numéro_téléphone</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_11">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 10px;
+padding: 10px;</string>
+                   </property>
+                   <property name="text">
+                    <string>CIN_EMPLOYEES</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="frame_8">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::Shape::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Shadow::Raised</enum>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_5">
+                 <item>
+                  <widget class="QLineEdit" name="lineEditLNomlocale">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 5px;
+padding: 5px;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEditLAdresse">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 5px;
+padding: 5px;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEditLNommanager">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 5px;
+padding: 5px;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QComboBox" name="comboBoxLStatut">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 5px;
+padding: 5px;</string>
+                   </property>
+                   <item>
+                    <property name="text">
+                     <string>disponible</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>occupe</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>reserve</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>maintenance</string>
+                    </property>
+                   </item>
+                   <item>
+                    <property name="text">
+                     <string>ferme</string>
+                    </property>
+                   </item>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEditLServices">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 5px;
+padding: 5px;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEditLNombreemployees">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 5px;
+padding: 5px;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEditLCapacitevehicule">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 5px;
+padding: 5px;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEditLNumerotelephone">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 5px;
+padding: 5px;</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEditLCIN">
+                   <property name="styleSheet">
+                    <string notr="true">background-color:rgb(255, 255, 255);
+border-radius: 5px;
+padding: 5px;</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1282</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="img.qrc"/>
+ </resources>
+ <connections/>
+</ui>
