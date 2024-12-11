@@ -181,7 +181,7 @@ background-color: rgb(54, 75, 155);
 </string>
           </property>
           <property name="currentIndex">
-           <number>5</number>
+           <number>4</number>
           </property>
           <widget class="QWidget" name="home">
            <widget class="QLabel" name="label_9">

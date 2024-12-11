@@ -79,6 +79,8 @@ private:
     void  populateServiceComboBox();
     void on_dis_clicked();
 
+    void on_tableView_clicked(const QModelIndex &index1);
+
    QString getCurrentDateTime();
    void on_pic_2_clicked();
    void on_disimage_clicked();

@@ -1,4 +1,3 @@
-
 #include "mainwindow.h"
 #include "qpushbutton.h"
 #include "qsqlerror.h"
@@ -94,6 +93,7 @@ MainWindow::MainWindow(QWidget *parent) :
        connect(ui->suggestPhoto, &QPushButton::clicked, this, &::MainWindow:: on_suggestPhoto_clicked);
        connect(ui->sortByDateEntree_2, &QPushButton::clicked, this, &::MainWindow::on_sortByDateEntree_2_clicked);
        connect(ui->tableView_5, &QTableView::clicked, this, &MainWindow::on_tableView_5_clicked);
+       connect(ui->tableView, &QTableView::clicked, this, &::MainWindow::on_tableView_clicked);
       // connect(ui->updateButton, &QPushButton::clicked, this, &MainWindow::on_updateButton_clicked);
 
         connect(ui->ard, &QPushButton::clicked, this, &::MainWindow:: on_ard_clicked);
@@ -102,7 +102,6 @@ MainWindow::MainWindow(QWidget *parent) :
         connect(ui->offButton, &QPushButton::clicked, this, &MainWindow::on_offButton_clicked);
 
         connect(ui->submitButton, &QPushButton::clicked, this, &::MainWindow::on_submitButton_clicked);
-
 
 
 
@@ -448,6 +447,7 @@ void MainWindow::addIncrementedTapisValue() {
         qDebug() << "New TAPIS record with incremented TAP added successfully.";
     }
 }
+/*
 void MainWindow::on_submitButton_clicked() {
     QSqlQuery query;
 
@@ -463,9 +463,9 @@ void MainWindow::on_submitButton_clicked() {
     }
 }
 
+*/
 
 
-/*
 void MainWindow::on_submitButton_clicked() {
     // Get and trim spaces from the service ID input
     QString serviceID = ui->lineEdit_ss->text().trimmed();
@@ -536,7 +536,7 @@ void MainWindow::on_submitButton_clicked() {
         QMessageBox::information(this, "Obstacle Detected", "Obstacle detected by: " + sensorDetected);
     }
 }
-*/
+
 void MainWindow::ensureSerialPortOpen() {
     if (serial->isOpen()) {
         qDebug() << "Serial port is already open.";
@@ -684,6 +684,18 @@ void MainWindow::on_ADD_clicked()
         ui->lineEdit_3->clear();
         ui->comboBox->setCurrentIndex(0);  // Reset the combo box to the first item
         ui->tableView->setModel(E.afficher());  // Update the view with the new list of services
+    }
+}
+void MainWindow::on_tableView_clicked(const QModelIndex &index1){
+    if (index1.isValid()) {
+        // Only process the ID_SERVICE column (assuming it's the first column, index 0)
+        if (index1.column() == 0) {  // column 0 is assumed to be ID_SERVICE
+            // Get the data from the clicked cell (ID_SERVICE)
+            QString idService = index1.data().toString();
+
+            // Set the ID_SERVICE into the lineEdit_9
+            ui->lineEdit_2->setText(idService);
+        }
     }
 }
 void MainWindow::on_upd_clicked()

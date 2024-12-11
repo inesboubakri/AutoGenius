@@ -87,7 +87,7 @@ QSqlQueryModel* service::afficher(){
 
     QSqlQueryModel* model=new
             QSqlQueryModel();
-    model->setQuery("select * from SERVICE");
+    model->setQuery("select ID_SERVICE,NOM_EMPLOYE,DATE_ENTRÉE,DATE_SORTIE,ETAT_SERVICE from SERVICE");
     model->setHeaderData(0, Qt::Horizontal, QObject::tr("id_service"));
     model->setHeaderData(1, Qt::Horizontal, QObject::tr("Nom_Employe"));
     model->setHeaderData(2, Qt::Horizontal, QObject::tr("Date_entrée"));
@@ -298,7 +298,7 @@ bool service::generateExcel(QTableView *tableView) {
 QSqlQueryModel* service::sortByDateEntree() {
     QSqlQueryModel *model = new QSqlQueryModel();
     // Sort by Date_entrée in ascending order
-    QString query = "SELECT * FROM SERVICE ORDER BY DATE_ENTRÉE ASC";
+    QString query = "SELECT ID_SERVICE,NOM_EMPLOYE,DATE_ENTRÉE,DATE_SORTIE,ETAT_SERVICE FROM SERVICE ORDER BY DATE_ENTRÉE ASC";
     model->setQuery(query);
     return model;
 }
@@ -306,7 +306,7 @@ QSqlQueryModel* service::sortByName() {
     QSqlQueryModel *model = new QSqlQueryModel();
 
     // Sort by NOM_EMPLOYE in ascending order
-    QString query = "SELECT * FROM SERVICE ORDER BY NOM_EMPLOYE ASC";
+    QString query = "SELECT ID_SERVICE,NOM_EMPLOYE,DATE_ENTRÉE,DATE_SORTIE,ETAT_SERVICE FROM SERVICE ORDER BY NOM_EMPLOYE ASC";
     model->setQuery(query);
 
     if (model->lastError().isValid()) {
