@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../../qt/1.png</file>
+        <file>../../qt/bell.png</file>
+        <file>../../qt/carc.png</file>
+        <file>../../qt/hand-shake.png</file>
+        <file>../../qt/hello.png</file>
+        <file>../../qt/history.png</file>
+        <file>../../qt/logout.png</file>
+        <file>../../qt/loupe.png</file>
+        <file>../../qt/open-hand.png</file>
+        <file>../../qt/pdf-file.png</file>
+        <file>../../qt/target.png</file>
+        <file>../../qt/wired-outline-18-location-pin-hover-jump.png</file>
+        <file>../../qt/wired-outline-21-avatar-hover-jumping.png</file>
+        <file>../../qt/wired-outline-860-electric-car-hover-pinch.png</file>
+        <file>../../qt/wired-outline-2020-wroclaw-city-hover-pinch.png</file>
+        <file>../../qt/format_justify_center.png</file>
+        <file>../../qt/back.png</file>
+        <file>../../qt/back.jpg</file>
+        <file>../../qt/diagramme.png</file>
+    </qresource>
+</RCC>

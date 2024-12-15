@@ -1,0 +1,15 @@
+release/chatbot.o
+release/connection.o
+release/dialog.o
+release/emailsender.o
+release/employee.o
+release/mailer.o
+release/main.o
+release/mainwindow.o
+release/partnership.o
+release/service.o
+release/vehicule.o
+release/qrc_img.o
+release/moc_dialog.o
+release/moc_emailsender.o
+release/moc_mainwindow.o
